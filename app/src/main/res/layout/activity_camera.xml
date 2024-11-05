@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Camera_Activity">
+
+    <ImageButton
+        android:id="@+id/btBackCamera"
+        android:layout_width="82dp"
+        android:layout_height="14dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:src="@android:drawable/ic_menu_revert"
+        tools:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageView
+        android:id="@+id/myImg"
+        android:layout_width="match_parent"
+        android:layout_height="518dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/girl"
+        tools:srcCompat="@drawable/girl" />
+
+    <ImageButton
+        android:id="@+id/btImgCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:src="@drawable/icon"
+        tools:srcCompat="@drawable/icon" />
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btCallPhone"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="408dp"
+        android:backgroundTint="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/icon_phone"
+        tools:srcCompat="@drawable/icon_phone" />
+
+    <ImageButton
+        android:id="@+id/btSMS"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toEndOf="@+id/btCallPhone"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/icon_messager"
+        tools:srcCompat="@drawable/icon_messager" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+
+        android:text="SuperPhone"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btCamera"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCallPhone"
+        android:src="@android:drawable/ic_menu_camera"
+        tools:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/btSuperBrowser"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+
+        app:layout_constraintStart_toEndOf="@+id/btCamera"
+        app:layout_constraintTop_toBottomOf="@+id/btSMS"
+        android:src="@android:drawable/ic_menu_compass"
+        tools:srcCompat="@android:drawable/ic_menu_compass" />
+</androidx.constraintlayout.widget.ConstraintLayout>
